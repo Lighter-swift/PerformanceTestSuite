@@ -56,9 +56,14 @@ As a chart:
 
 *Main takeway*: Never ever use Codable.
 
-### TODO
+#### TODO
 
 - [ ] CoreData performance test (replicate schema, load records via Lighter)
+- [x] Add a test for GRDB Codable
+- [x] Add a test for SQLite.swift Codable
+- [x] Add a test for SQLite.swift w/o Codable, with hand written mappings
+- [x] Lighter API Tests
+- [x] Enlighter generated raw SQLite API Tests
 
 
 ### Test Environment
