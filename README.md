@@ -22,6 +22,7 @@ M1 Mini with 10 rampup iterations and 500 test iterations.
 Orders.fetchAll    setup    rampup   duration
   Enlighter SQLite 0        0,135s     6,629s   ~20% faster than Lighter (75/s)
   Lighter          0        0,162s     7,927s   Baseline                 (63/s)
+  GRDB             -        -        ~12s       Handwritten Mapping
   SQLite.swift     0        0,613s    30,643s   Handwritten Mapping (>3× slower) (16/s)
   GRDB             0,001    0,995s    49,404s   Codable (>6× slower)     (10/s)
   SQLite.swift     0,001    3,109s   153,172s   Codable (>19× slower)    (3/s)
@@ -40,6 +41,9 @@ As a chart:
 ├──┐                                                                          │
 │L3│               Lighter, w/ high level API (baseline)            Baseline  │
 ├──┘                                                                          │
+├─────┐                                                                       │
+│GRDB │            with handwritten record mappings              ~50% slower  │
+├─────┘                                                                       │
 ├─────────────┐                                                               │
 │SQLite.swift │    with handwritten record mappings               >3× slower  │
 ├─────────────┘                                                               │

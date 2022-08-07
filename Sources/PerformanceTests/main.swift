@@ -32,6 +32,7 @@ enum DBPathes {
 
 let testMap = [
   "GRDB"               : GRDBTests.builtinModelObjectTests,
+  "GRDB(manu)"         : GRDBTests.indexMappedStructureTests,
   "SQLite.swift"       : SQLiteSwiftTests.builtinModelObjectTests,
   "SQLite.swift(manu)" : SQLiteSwiftTests.handWrittenMapping,
   "Lighter"            : LighterTests.builtinModelObjectTests,
