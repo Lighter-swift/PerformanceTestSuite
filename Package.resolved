@@ -14,8 +14,8 @@
       "kind" : "remoteSourceControl",
       "location" : "git@github.com:55DB091A-8471-447B-8F50-5DFF4C1B14AC/Lighter.git",
       "state" : {
-        "branch" : "develop",
-        "revision" : "7c075f71994e216c1e5a9d84f548a6fedd4f9b14"
+        "revision" : "cb7f477901307b77ab70c914175250e4935b3c1e",
+        "version" : "1.0.0"
       }
     },
     {
